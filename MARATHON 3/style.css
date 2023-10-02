@@ -1,0 +1,176 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+body{
+    background-color: rgb(20, 20, 20);
+    max-height: 400vh;
+}
+/* HEADER */
+header{
+    height: 80px;
+}
+header nav ul{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+header nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+header nav ul li a{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0 15px;
+    letter-spacing: 1px;
+}
+header nav ul li a:hover{
+    color: cyan;
+}
+header nav ul li a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid blueviolet;
+    transform: scaleX(0);
+    transition: 0.35s linear;
+  }
+header nav ul li a:hover::after {
+    transform: scaleX(0.7);
+    transition: 0.35s linear;
+}
+/* END HEADER */
+/* MAIN */
+main{
+    padding-top: 80px;
+    height: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+main .profil-ilc{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .profil-ilc h1{
+    color: #fff;
+    margin:20px 0;
+    letter-spacing: 1px;
+}
+main .profil-ilc img{
+    height: 40%;
+    width: 90%;
+}
+main .profil-ilc article{
+    margin: 5px 0 ;
+    margin-left: 50px;
+}
+main .kegiatan-ilc{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .kegiatan-ilc h1{
+    text-align: center;
+    color: #fff;
+    margin:20px 0;
+    letter-spacing: 1px;
+}
+main .kegiatan-ilc img{
+    height: 50%;
+    width: 60%;
+}
+main .kegiatan-ilc article{
+    margin: 5px 0 ;
+    margin-left: 50px;
+}
+aside{
+    padding-top: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside section{
+    height: 600px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+aside section article{
+    padding: 0 10px;
+}
+/* END MAIN */
+/* FORM */
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 800px;
+}
+form ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+    background-image: url(assets/Logo-ILC.png);
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+form ul li label{
+    color: black;
+}
+form ul .judul{
+    text-align: center;
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 700;
+}
+form ul li .input{
+    height: 20px;
+    width: 100%;
+    color: black;
+}
+form ul .submit{
+    height: 20px;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+form ul #submit{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+}
+footer{
+    height: 80px;
+    color: black;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
